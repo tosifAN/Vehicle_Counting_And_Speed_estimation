@@ -14,27 +14,6 @@ This project involves implementing vehicle detection, counting, and speed estima
 - **Speed Estimation:**
   - Utilized frame timestamps and vehicle tracking information to estimate vehicle speeds based on distance covered and time elapsed.
 
-## Project Structure
-
-- `yolov8_detection/`: Contains code for vehicle detection using YOLOv8.
-- `vehicle_counting/`: Includes code for vehicle counting algorithms.
-- `speed_estimation/`: Holds code for vehicle speed estimation based on tracking information.
-- `videos/`: Source videos used for vehicle detection and speed estimation.
-
-## Usage
-
-1. **YOLOv8 Detection:**
-   - Access the `yolov8_detection/` directory for YOLOv8 detection code and instructions.
-   - Execute the code to detect vehicles in the provided videos or video streams.
-
-2. **Vehicle Counting:**
-   - Navigate to the `vehicle_counting/` directory to access vehicle counting algorithms.
-   - Run the code to count vehicles based on detected bounding boxes.
-
-3. **Speed Estimation:**
-   - Visit the `speed_estimation/` directory for code related to vehicle speed estimation.
-   - Execute the code to estimate vehicle speeds using tracking information.
-
 ## Requirements
 
 - Python 3.x
@@ -42,16 +21,54 @@ This project involves implementing vehicle detection, counting, and speed estima
 - OpenCV library for video processing and analysis
 - Input videos for vehicle detection and speed estimation
 
-## Resources
 
-- [Link to YOLOv8 Framework Documentation](yolov8_documentation_link)
-- [Link to OpenCV Documentation or Tutorials]
+<H1 align="center">
+YOLOv8 Object Tracking and Speed Estimation
 
-## License
+## Google Colab File Link (A Single Click Solution)
+The google colab file link for yolov8 object tracking, blurring and  counting is provided below, you can check the implementation in Google Colab, and its a single click implementation
+,you just need to select the Run Time as GPU, and click on Run All.
 
-This project is licensed under the [License Name] License - see the [LICENSE](LICENSE) file for details.
+[`Google Colab File`](https://colab.research.google.com/drive/1haDui8z7OvITbOpGL1d0NFf6M4BxcI-y?usp=sharing)
 
-## Contributors
 
-- [Your Name]
-- [Other Contributors, if applicable]
+## Steps to run Code
+
+- Clone the repository
+```
+git clone https://github.com/MuhammadMoinFaisal/YOLOv8-object-tracking-blurring-counting.git
+```
+- Goto the cloned folder.
+```
+cd YOLOv8-object-tracking-blurring-counting
+```
+- Install the dependecies
+```
+pip install -e '.[dev]'
+
+```
+
+- Setting the Directory.
+```
+cd ultralytics/yolo/v8/detect
+
+```
+- Downloading the DeepSORT Files From The Google Drive 
+```
+
+https://drive.google.com/drive/folders/1kna8eWGrSfzaR6DtNJ8_GchGgPMv3VC8?usp=sharing
+```
+- After downloading the DeepSORT Zip file from the drive, unzip it go into the subfolders and place the deep_sort_pytorch folder into the yolo/v8/detect folder
+
+- Downloading a Sample Video from the Google Drive
+```
+gdown https://drive.google.com/uc?id=1_kt1alzcLRVxet-Drx0mt_KFSd3vrtHU
+```
+
+- Run the code with mentioned command below.
+
+- For yolov8 object detection, Tracking,  blurring and object counting
+```
+python predict.py model=yolov8l.pt source=test_video_path show=True
+```
+
