@@ -36,11 +36,11 @@ The google colab file link for yolov8 object tracking, blurring and  counting is
 
 - Clone the repository
 ```
-git clone https://github.com/MuhammadMoinFaisal/YOLOv8-object-tracking-blurring-counting.git
+git clone https://github.com/tosifAN/Vehicle_Counting_And_Speed_estimation
 ```
 - Goto the cloned folder.
 ```
-cd YOLOv8-object-tracking-blurring-counting
+cd Vehicle_Counting_And_Speed_estimation
 ```
 - Install the dependecies
 ```
