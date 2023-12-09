@@ -25,12 +25,6 @@ This project involves implementing vehicle detection, counting, and speed estima
 <H1 align="center">
 YOLOv8 Object Tracking and Speed Estimation
 
-## Google Colab File Link (A Single Click Solution)
-The google colab file link for yolov8 object tracking, blurring and  counting is provided below, you can check the implementation in Google Colab, and its a single click implementation
-,you just need to select the Run Time as GPU, and click on Run All.
-
-[`Google Colab File`](https://colab.research.google.com/drive/1haDui8z7OvITbOpGL1d0NFf6M4BxcI-y?usp=sharing)
-
 
 ## Steps to run Code
 
